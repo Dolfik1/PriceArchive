@@ -4,3 +4,6 @@ F:\YandexDisk\Projects\PriceArchive\PriceArchive.Parser\bin\Release\PriceArchive
 F:\YandexDisk\Projects\PriceArchive\PriceArchive.Parser\obj\Release\PriceArchive.Parser.csprojResolveAssemblyReference.cache
 F:\YandexDisk\Projects\PriceArchive\PriceArchive.Parser\obj\Release\PriceArchive.Parser.exe
 F:\YandexDisk\Projects\PriceArchive\PriceArchive.Parser\obj\Release\PriceArchive.Parser.pdb
+F:\YandexDisk\Projects\PriceArchive\PriceArchive.Parser\bin\Release\HtmlAgilityPack.dll
+F:\YandexDisk\Projects\PriceArchive\PriceArchive.Parser\bin\Release\HtmlAgilityPack.pdb
+F:\YandexDisk\Projects\PriceArchive\PriceArchive.Parser\bin\Release\HtmlAgilityPack.xml

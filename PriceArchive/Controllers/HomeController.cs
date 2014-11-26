@@ -15,7 +15,7 @@ namespace PriceArchive.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Куда я попал?";
 
             return View();
         }
