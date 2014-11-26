@@ -23,12 +23,23 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
                     <li>@Html.ActionLink("О программе", "About", "Home")</li>
-                    <li>@Html.ActionLink("Контакт", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
+        <div class="row">
+            <div class="col-md-1" style="padding-top: 10px;">
+                <img src="Content/Images/icon-small.png" />
+            </div>
+            <div class="col-md-12">
+                <div class="row" style="padding: 25px;">
+                    <input class="form-control col-md-1" type="text" placeholder="Найти товар..." value="" />
+                    <p><a class="btn btn-default col-md-1" style="left: -5px;" href="">Найти</a></p>
+                </div>
+            </div>
+        </div>
         @RenderBody()
         <hr />
         <footer>
