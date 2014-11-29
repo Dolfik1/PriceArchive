@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.875" name="PriceArchiveDb">
+  <DataContextMoniker Name="/PriceArchiveDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="16f96f4a-b664-4e67-a16b-b9d72ea9291e" absoluteBounds="0.75, 0.875, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/PriceArchiveDbDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fc6aaaa-a2ae-4ebd-86d4-2dcb6c085dc2" absoluteBounds="0.765, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b74a0cbb-4692-4dce-a9b0-6b5ab08c4210" absoluteBounds="3.5, 0.875, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/PriceArchiveDbDataContext/UserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cdac3d35-e3b7-4ccb-8c4f-9b48306d889a" absoluteBounds="3.515, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="36d42fce-23be-45a6-a5bc-17d283c3ed6f" absoluteBounds="0.75, 5.5, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/PriceArchiveDbDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02d676fc-d01c-4ff5-ae30-d23794973afa" absoluteBounds="0.765, 5.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.56814697265625); (3.5 : 1.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PriceArchiveDbDataContext/Role/Role_UserRole" />
+      <nodes>
+        <classShapeMoniker Id="16f96f4a-b664-4e67-a16b-b9d72ea9291e" />
+        <classShapeMoniker Id="b74a0cbb-4692-4dce-a9b0-6b5ab08c4210" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.05850341796875); (4.5 : 7.05850341796875); (4.5 : 2.2612939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PriceArchiveDbDataContext/User/User_UserRole" />
+      <nodes>
+        <classShapeMoniker Id="36d42fce-23be-45a6-a5bc-17d283c3ed6f" />
+        <classShapeMoniker Id="b74a0cbb-4692-4dce-a9b0-6b5ab08c4210" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

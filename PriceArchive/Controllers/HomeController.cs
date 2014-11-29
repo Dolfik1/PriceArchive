@@ -10,6 +10,13 @@ namespace PriceArchive.Controllers
     {
         public ActionResult Index()
         {
+            var cookie = new HttpCookie() 
+            { 
+                Name = "auth_cookie",
+                Value = DateTime.Now.ToString("dd.MM.yyyy"),
+                Expires = DateTime.Now.AddMinutes(10),
+            };
+            Response.SetCookie(cookie);
             return View();
         }
 
