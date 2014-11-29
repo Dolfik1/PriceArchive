@@ -35,5 +35,26 @@ namespace PriceArchive.Areas.Default.Controllers
             Auth.LogOut();
             return RedirectToAction("Index", "Home");
         }
+
+        [HttpGet]
+        public ActionResult Ajax()
+        {
+            return View(new LoginView());
+        }
+
+        [HttpPost]
+        public ActionResult Ajax(LoginView loginView)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = Auth.Login(loginView.Email, loginView.Password, loginView.IsPersistent);
+                if (user != null)
+                {
+                    return View("_Ok");
+                }
+                ModelState["Password"].Errors.Add("Пароли не совпадают");
+            }
+            return View(loginView);
+        }
     }
 }
