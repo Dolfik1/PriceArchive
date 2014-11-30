@@ -24,10 +24,6 @@ namespace PriceArchive
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                      "~/Scripts/jquery-ui-1.*"));
-
-            bundles.Add(new StyleBundle("~/Content/css/jqueryui")
-                   .Include("~/Content/jquery-ui-1*"));
-
         }
     }
 }

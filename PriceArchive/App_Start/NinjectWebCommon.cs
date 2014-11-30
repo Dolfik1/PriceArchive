@@ -8,6 +8,7 @@ using Ninject;
 using Ninject.Web.Common;
 using PriceArchive.Mappers;
 using PriceArchive.Global.Auth;
+using PriceArchive.Global.Config;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(PriceArchive.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(PriceArchive.App_Start.NinjectWebCommon), "Stop")]
@@ -58,7 +59,8 @@ namespace PriceArchive.App_Start
             kernel.Bind<PriceArchiveDbDataContext>().ToMethod(c => new PriceArchiveDbDataContext(ConfigurationManager.ConnectionStrings[1].ConnectionString));
             kernel.Bind<IRepository>().To<SqlRepository>().InRequestScope();
             kernel.Bind<IMapper>().To<CommonMapper>().InSingletonScope();
-            kernel.Bind<IAuthentication>().To<CustomAuthentication>().InRequestScope();
+            kernel.Bind<IAuthentication>().To<CustomAuthentication>().InRequestScope(); 
+            kernel.Bind<IConfig>().To<Config>().InSingletonScope();
         }
     }
 }

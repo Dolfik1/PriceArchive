@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>EntityFrameworkWithHierarchyId</id>
+    <version>6.1.1</version>
+    <title>EntityFramework.HierarchyId</title>
+    <authors>Microsoft,  ZGabi</authors>
+    <owners>Microsoft,  ZGabi</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkID=389134</licenseUrl>
+    <projectUrl>https://entityframework.codeplex.com/SourceControl/network/forks/zgabi/efhierarchyid</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=386613</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Entity Framework is Microsoft's recommended data access technology for new applications.</description>
+    <summary>Entity Framework is Microsoft's recommended data access technology for new applications.</summary>
+    <language>en-US</language>
+    <tags>Microsoft EF Database Data O/RM ADO.NET HIERARCHYID</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ComponentModel.DataAnnotations" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
